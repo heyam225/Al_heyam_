@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هيام الحاج - مصممة جرافكس</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عني</a></li>
+            <li><a href="#portfolio">معرض الأعمال</a></li>
+            <li><a href="#contact">اتصل بي</a></li>
+        </ul>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>هيام الحاج</h1>
+            <h2>مصممة جرافيكس محترفة</h2>
+            <p>أبدع في تقديم حلول تصميمية إبداعية تلبي احتياجاتك</p>
+        </div>
+    </section>
+
+    <!-- قسم معرض الأعمال -->
+    <section id="portfolio" class="portfolio">
+        <h2>معرض الأعمال</h2>
+        <div class="gallery">
+            <!-- هنا سيتم إضافة الصور عبر JavaScript أو يدويًا -->
+            <div class="gallery-item">
+                <img src="work1.jpg" alt="عمل جرافيك 1">
+            </div>
+            <div class="gallery-item">
+                <img src="work2.jpg" alt="عمل جرافيك 2">
+            </div>
+            <div class="gallery-item">
+                <img src="work3.jpg" alt="عمل جرافيك 3">
+            </div>
+            <!-- يمكن إضافة المزيد -->
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>© 2025 هيام الحاج. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
+
+/* إعادة تعيين بعض الإعدادات الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* الخلفية المتحركة */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0080, #8000ff, #00bfff, #ff0080);
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* شريط التنقل */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff66b3; /* وردي مضيء */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #cc0066; /* وردي أغمق */
+}
+
+/* القسم الرئيسي */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #ff66b3; /* وردي مضيء */
+    margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: #cc99ff; /* بنفسجي فاتح */
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* معرض الأعمال */
+.portfolio {
+    padding: 5rem 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff66b3;
+    margin-bottom: 3rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* التذييل */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #cc99ff;
+}
+
+<img src="مسار_الصورة_هنا.jpg" alt="وصف الصورة">
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هيام الحاج | مصممة جرافيكس محترفة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* متغيرات الألوان */
+        :root {
+            --pink-bright: #ff2a9c;
+            --pink-light: #ff8ac8;
+            --purple: #a855f7;
+            --purple-dark: #7e22ce;
+            --black: #0a0a0a;
+            --gray: #1f1f1f;
+            --white: #f5f5f5;
+        }
+
+        /* إعادة ضبط عام */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* الخلفية المتحركة */
+        .animated-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--pink-light), transparent);
+            opacity: 0.5;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0) scale(0.8);
+                opacity: 0.5;
+            }
+            50% {
+                transform: translateY(-100px) translateX(50px) scale(1.2);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) translateX(0) scale(0.8);
+                opacity: 0.5;
+            }
+        }
+
+        /* الشريط العلوي */
+        header {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--purple);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            background: linear-gradient(45deg, var(--pink-bright), var(--purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--pink-bright);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+        }
+
+        nav a:hover {
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--pink-light);
+        }
+
+        /* القسم الرئيسي */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            z-index: 10;
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero h2 span {
+            background: linear-gradient(45deg, var(--pink-bright), var(--purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+.hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #d1d1d1;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--pink-bright), var(--purple));
+            color: white;
+            padding: 12px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(168, 85, 247, 0.6);
+        }
+
+        .hero-image {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45%;
+            max-width: 600px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border: 3px solid var(--purple);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* قسم التخصصات */
+        .specialties {
+            padding: 5rem 5%;
+            background: rgba(15, 15, 15, 0.7);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            font-size: 2.5rem;
+        }
+
+        .section-title span {
+            background: linear-gradient(45deg, var(--pink-bright), var(--purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: rgba(40, 40, 40, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--purple);
+            background: rgba(50, 50, 50, 0.7);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--pink-bright), var(--purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--pink-light);
+        }
+
+        .service-card p {
+            color: #b0b0b0;
+        }
+
+        /* معرض الأعمال */
+        .portfolio {
+            padding: 5rem 5%;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .portfolio-item {
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.03);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10, 10, 10, 0.9), transparent);
+            padding: 2rem 1.5rem 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+.portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        .portfolio-overlay h3 {
+            color: var(--pink-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-overlay p {
+            color: #c0c0c0;
+            font-size: 0.9rem;
+        }
+
+        /* قسم الاتصال */
+        .contact {
+            padding: 5rem 5%;
+            background: rgba(15, 15, 15, 0.7);
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--pink-light);
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--purple);
+            width: 50px;
+            height: 50px;
+            background: rgba(168, 85, 247, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(168, 85, 247, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--pink-light);
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: var(--purple);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--pink-light);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(40, 40, 40, 0.6);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--purple);
+            box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, var(--pink-bright), var(--purple));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* التذييل */
+        footer {
+            background: rgba(10, 10, 10, 0.95);
+            padding: 3rem 5%;
+            text-align: center;
+            border-top: 1px solid var(--purple);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--pink-bright), var(--purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .copyright {
+            color: #888;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+/* تصميم متجاوب */
+        @media (max-width: 992px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 120px;
+            }
+            
+            .hero-content {
+                margin-bottom: 3rem;
+            }
+            
+            .hero-image {
+                position: relative;
+                width: 80%;
+                right: auto;
+                top: auto;
+                transform: none;
+                margin: 0 auto;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- خلفية متحركة -->
+    <div class="animated-background" id="background"></div>
+
+    <!-- الشريط العلوي -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-palette logo-icon"></i>
+            <h1>هيام الحاج</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">خدماتي</a></li>
+                <li><a href="#portfolio">معرض الأعمال</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>الإبداع يتجلى في <span>كل تفصيل</span></h2>
+            <p>مرحباً، أنا هيام الحاج، مصممة جرافيكس محترفة. أقدم حلولاً تصميمية إبداعية تلبي احتياجاتك وتنقل رسالتك بأسلوب فريد ومؤثر.</p>
+            <a href="#portfolio" class="cta-button">استكشف أعمالي</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=500&auto=format&fit=crop" alt="هيام الحاج - مصممة جرافيكس">
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="specialties" id="services">
+        <h2 class="section-title">مجالات <span>تخصصي</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h3>تصميم الشعارات</h3>
+                <p>شعارات فريدة تعبر عن هوية علامتك التجارية وتجذب انتباه عملائك</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-book-open service-icon"></i>
+                <h3>تصميم البروشورات</h3>
+                <p>تصاميم إعلانية جذابة تعرض منتجاتك وخدماتك بشكل احترافي</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3>تصميم وسائل التواصل</h3>
+                <p>تصاميم مخصصة لوسائل التواصل الاجتماعي تزيد من تفاعل متابعيك</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-t-shirt service-icon"></i>
+                <h3>تصميم المطبوعات</h3>
+                <p>تصاميم مبتكرة للملصقات والبطاقات والهدايا الترويجية</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-icons service-icon"></i>
+
+<h3>تصميم الأيقونات</h3>
+                <p>أيقونات فريدة تعزز تجربة المستخدم وتجعل تطبيقاتك أكثر جاذبية</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-video service-icon"></i>
+                <h3>الموشن جرافيك</h3>
+                <p>رسوم متحركة إبداعية تجذب المشاهدين وتنقل رسالتك بشكل فعال</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- معرض الأعمال -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">معرض <span>أعمالي</span></h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=500&auto=format&fit=crop" alt="تصميم شعار">
+                <div class="portfolio-overlay">
+                    <h3>شعار لمطعم</h3>
+                    <p>تصميم شعار عصري لمطعم فاخر</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1588690154757-badf4644190f?q=80&w=500&auto=format&fit=crop" alt="بروشور">
+                <div class="portfolio-overlay">
+                    <h3>بروشور ترويجي</h3>
+                    <p>تصميم بروشور لشركة عقارية</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?q=80&w=500&auto=format&fit=crop" alt="تصميم وسائل تواصل">
+                <div class="portfolio-overlay">
+                    <h3>حملة وسائل تواصل</h3>
+                    <p>تصاميم لحملة تسويقية على الإنستغرام</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=500&auto=format&fit=crop" alt="تصميم عبوات">
+                <div class="portfolio-overlay">
+                    <h3>تصميم عبوات</h3>
+                    <p>تصميم عبوات لمنتجات تجميل</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=500&auto=format&fit=crop" alt="تصميم كتاب">
+                <div class="portfolio-overlay">
+                    <h3>تصميم غلاف كتاب</h3>
+                    <p>تصميم غلاف لرواية أدبية</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=500&auto=format&fit=crop" alt="موشن جرافيك">
+                <div class="portfolio-overlay">
+                    <h3>موشن جرافيك</h3>
+                    <p>فيديو موشن جرافيك لشركة تقنية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">تواصل <span>معي</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>الموقع</h4>
+                        <p>بيروت، لبنان</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <h4>الهاتف</h4>
+                        <p>+961 71 234 567</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+
+<div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>البريد الإلكتروني</h4>
+                        <p>hello@hayamhaj.com</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">الموضوع</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">هيام الحاج</div>
+            <p>مصممة جرافيكس محترفة متخصصة في تقديم حلول تصميمية إبداعية تجمع بين الجمال والوظيفية.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="copyright">© 2023 هيام الحاج. جميع الحقوق محفوظة.</div>
+        </div>
+    </footer>
+
+    <script>
+        // إنشاء فقاعات للخلفية المتحركة
+        function createBubbles() {
+            const background = document.getElementById('background');
+            const bubbleCount = 15;
+            
+            for (let i = 0; i < bubbleCount; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                
+                // أحجام عشوائية للفقاعات
+                const size = Math.random() * 150 + 50;
+                bubble.style.width = ${size}px;
+                bubble.style.height = ${size}px;
+                
+                // مواقع عشوائية
+                bubble.style.left = ${Math.random() * 100}%;
+                bubble.style.top = ${Math.random() * 100}%;
+                
+                // تأخيرات متعددة للحركة
+                bubble.style.animationDelay = ${Math.random() * 5}s;
+
+background.appendChild(bubble);
+            }
+        }
+        
+        // تشغيل الخلفية عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', createBubbles);
+        
+        // سلاسة التمرير لروابط التنقل
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
